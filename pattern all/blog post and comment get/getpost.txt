@@ -1,0 +1,15 @@
+ $post = new getAllPost();
+    for($i=0; $i<count($post); $i++){
+        $title = getTitle($post[$i]);
+        echo $title;
+        $author = getAuthor($post[$i]);
+        $content = getContent($post[$i]);
+        echo $content;
+        $comment = getComment($post[$i]);
+        for($j=0; $j<count($comment); $j++){
+            echo "comment Author";
+            $com = GepostComment($comment[$j]);
+            echo $com;
+        }
+
+    }
